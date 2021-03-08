@@ -1,0 +1,2 @@
+ACTION=="add", SUBSYSTEM=="block", SUBSYSTEMS=="usb", RUN+="/lib/udev/alert.sh add"
+ACTION=="remove", KERNEL=="sd?", SUBSYSTEM=="block", SUBSYSTEMS=="usb", RUN+="/lib/udev/alert.sh remove"
