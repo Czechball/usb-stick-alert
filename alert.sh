@@ -2,11 +2,9 @@
 
 case "$1" in
 	add )
-		echo "usb connected" >> /tmp/alert-log.txt
-		exit
+		beep
 		;;
 	remove )
-		echo "usb disconnected" >> /tmp/alert-log.txt
-		exit
+		for (( i = 0; i < 4; i++ )); do beep -l 300 -f 1000 -r 1 -n -l 300 -f 700 -r 1v; done
 		;;
 esac
