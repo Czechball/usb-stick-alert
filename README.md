@@ -1,5 +1,6 @@
 # usb-stick-alert
-Bash script + udev ruleset that beeps when USB storage is connected / removed
+Bash script + udev ruleset that beeps when USB storage is connected / removed  
+Tested on Manjaro Linux `5.11.1-1-MANJARO`
 
 # Installation
 
